@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of the parent */
+}
+
+.dashboard-cards {
+    flex: 1; /* Take up remaining space */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+
+.card {
+    background-color: whitesmoke;
+}
+
+.bills-card {
+    grid-column: span 2;
+}
+
+.investments-card {
+    grid-row: span 2;
+}
